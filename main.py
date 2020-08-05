@@ -1,4 +1,4 @@
-from tkinter import Tk, filedialog, Button, Label, Entry
+from tkinter import Tk, filedialog, Button, Label, Entry, PhotoImage
 import tkinter.font as tkfont
 import csv
 import webbrowser
@@ -220,6 +220,7 @@ root=Tk()
 root.geometry("1100x600")
 root.title("CSV PASSWORD VIEWER")
 root.resizable(False, False)
+root.iconphoto(False, PhotoImage(file='favicon.png'))
 
 Button(root, text = "Browser file", command = select_file).place(x = 1000, y = 10)
 

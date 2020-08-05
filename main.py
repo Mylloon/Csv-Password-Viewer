@@ -167,10 +167,12 @@ def affichage():
 	root.title(f"CSV PASSWORD VIEWER - {liste_name[curseur]}")
 
 def clear_second_lancement():
-	global lancement_affichage_ligne, affichage_url
+	global lancement_affichage_ligne, affichage_url, affichage_curseur, barre_de_recherche
 	try:
 		lancement_affichage_ligne.destroy()
 		affichage_url.destroy()
+		affichage_curseur.destroy()
+		barre_de_recherche.destroy()
 	except:
 		pass
 
